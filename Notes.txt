@@ -1,0 +1,13 @@
+NOTES
+=====
+
+1. King
+	- win conditions: checkmate and check
+		- can't move to a space if enemy piece can kill that space
+		- can't move 1 space to other king (same problem)
+2. Pawn
+	- when the pawn gets to the other side, it can promote to any other piece
+		- denote a promoted unit
+
+3. Rook
+	- Castling may only be done if the king has never moved, the rook involved has never moved, the squares between the king and the rook involved are unoccupied, the king is not in check, and the king does not cross over or end on a square in which it would be in check
