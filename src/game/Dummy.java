@@ -1,18 +1,20 @@
 package game;
 
-public class King extends Piece {
+import java.util.ArrayList;
 
+public class Dummy extends Piece {
+	
 	private int x;
 	private int y;
 	private int type;
 	private boolean isDead;
 	private int kills;
 	
-	public King(int x, int y, int type) {
+	public Dummy(int x, int y, int type) {
 		super(x, y, type);
 	}
 	
-	public King(Location location, int type) {
+	public Dummy(Location location, int type) {
 		super(location, type);
 	}
 	
@@ -25,21 +27,10 @@ public class King extends Piece {
 	}
 	
 	public String toString() {
-		if(this.getType() == 0) {
-			return "K0";
-		}
-		else {
-			return "K1";
-		}
+		return "XX";
 	}
 	
 	public String getName() {
-		if(this.getType() == 0) {
-			return "King:BLACK";
-		}
-		else { 
-			return "King:WHITE";
-		}
+		return "Dummy";
 	}
-	
 }
